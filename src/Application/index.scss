@@ -1,0 +1,34 @@
+$application-border: #000;
+$menu-border-color: #777;
+$content-border-color: #bbb;
+
+.application {
+  border: 1px solid $application-border;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  .menu-section {
+    border: 1px solid $menu-border-color;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 37%;
+  }
+
+  .content-section {
+    border: 1px solid $content-border-color;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 62%;
+  }
+}
+
+.main-content {
+  margin-top: 3em;
+}
