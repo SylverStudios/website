@@ -10,6 +10,7 @@ const cssClasses = {
   studio: 'studio',
 };
 
+
 // Major Components
 const Application = React.createClass({
   getInitialState() {
@@ -26,6 +27,7 @@ const Application = React.createClass({
   },
 
   render() {
+
     return (
       <div>
         <NavBar activeTab={this.state.activeTab} onActiveTabChange={this.onActiveTabChange} />

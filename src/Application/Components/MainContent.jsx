@@ -1,12 +1,9 @@
 import React from 'react';
-import { Panel, Button } from 'react-bootstrap';
+import { Panel, Button, Well, Grid } from 'react-bootstrap';
+import GridRowPost from './GridRowPost';
+
 
 const tabInfo = {
-  home: {
-    panelHeader: "Home",
-    panelContent: "Welcome to the home page.",
-    links: [],
-  },
   games: {
     panelHeader: "Games",
     panelContent: "Check out the links to our games below!",
@@ -38,6 +35,10 @@ const tabInfo = {
 
 };
 
+var firstPostText = `Hey there lucky reader and welcome to Sylver Studios.
+Check out some of our links and await new content. We are doing a mad rush to get all of our cool toys 'production ready.'
+Don't forget to play our first release - Supervirus.`;
+
 
 const MainContent = React.createClass({
   getInitialState() {
@@ -49,6 +50,32 @@ const MainContent = React.createClass({
   render() {
     const activeTab = this.props.activeTab;
     const data = tabInfo[activeTab];
+
+    if (activeTab == 'home') {
+      return (
+        <div id="main-content" className="row main-content">
+          <div id="header">
+            <div className="col-md-2"></div>
+            <div className="col-md-8">
+              <Well>
+                Welcome Home! You can find updates and new content here, so check back often.
+              </Well>
+            </div>
+            <div className="col-md-2"></div>
+          </div>
+          <div id="blog-content">
+            <Grid>
+              <GridRowPost 
+                title='Initial Commit!' 
+                publishDate='2/14/16' 
+                imageLocation='/assets/SupervirusPicSmaller.png' 
+                text={firstPostText}
+                link="http://samgqroberts.com/games/supervirus"  />
+            </Grid>
+          </div>
+        </div>
+      );
+    }
 
     return (
       <div id="main-content" className="row main-content">
