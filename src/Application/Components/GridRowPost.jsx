@@ -3,22 +3,28 @@ import { Row, Col, Panel, Image, Button } from 'react-bootstrap';
 
 const GridRowPost = React.createClass({
   propTypes: {
-    title: React.PropTypes.string.isRequired,
-    publishDate: React.PropTypes.string.isRequired,
     imageLocation: React.PropTypes.string.isRequired,
-    text: React.PropTypes.string.isRequired,
     link: React.PropTypes.string,
+    linkText: React.PropTypes.string,
+    publishDate: React.PropTypes.string.isRequired,
+    text: React.PropTypes.string.isRequired,
+    title: React.PropTypes.string.isRequired,
+  },
+  getDefaultProps() {
+    return {
+      linkText: `I'm in!`,
+    };
   },
 
   render: function() {
     var button;
     if (this.props.link) {
-      button = <Button bsStyle="link" href={this.props.link}> I'm in! </Button>
+      button = <Button bsStyle="link" href={this.props.link}> {this.props.linkText} </Button>
     }
 
     return (
-      
-      <Row>
+
+      <Row className="grid-row-post-component">
         <Col xs={6} md={4}>
           <Image src={this.props.imageLocation} href="http://google.com" rounded />
         </Col>

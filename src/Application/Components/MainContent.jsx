@@ -7,7 +7,10 @@ const tabInfo = {
   games: {
     panelHeader: "Games",
     panelContent: "Check out the links to our games below!",
-    links: [{ title: 'Supervirus', link: 'http://samgqroberts.com/games/supervirus'}],
+    links: [
+      { title: 'Supervirus', link: 'http://samgqroberts.com/games/supervirus'},
+      { title: 'Circuit Simulator', link: 'http://samgqroberts.com/games/circuit'}
+    ],
   },
   videos: {
     panelHeader: "Videos",
@@ -39,6 +42,11 @@ var firstPostText = `Hey there lucky reader and welcome to Sylver Studios.
 Check out some of our links and await new content. We are doing a mad rush to get all of our cool toys 'production ready.'
 Don't forget to play our first release - Supervirus.`;
 
+const secondPostText = `We're publishing another project called Circuit Simulator, it was originally intended
+to be a game but it's really not fun.  We don't know what we were thinking.  We had this grand idea to model
+circuitry and we thought that would lend itself effectively as a fun puzzle, but we were very quite wrong.  Anyway,
+we built a thing, check it out!`;
+
 
 const MainContent = React.createClass({
   getInitialState() {
@@ -66,9 +74,17 @@ const MainContent = React.createClass({
           <div id="blog-content">
             <Grid>
               <GridRowPost
+                title='Circuits!'
+                publishDate='2/15/16'
+                imageLocation='assets/CircuitSimulatorPic.png'
+                text={secondPostText}
+                link="http://samgqroberts.com/games/circuit"
+                linkText="Whoa!"
+              />
+              <GridRowPost
                 title='Initial Commit!'
                 publishDate='2/14/16'
-                imageLocation='assets/SupervirusPicSmaller.png' 
+                imageLocation='assets/SupervirusPicSmaller.png'
                 text={firstPostText}
                 link="http://samgqroberts.com/games/supervirus"  />
             </Grid>
