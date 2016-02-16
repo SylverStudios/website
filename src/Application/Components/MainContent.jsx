@@ -65,10 +65,10 @@ const MainContent = React.createClass({
           </div>
           <div id="blog-content">
             <Grid>
-              <GridRowPost 
-                title='Initial Commit!' 
-                publishDate='2/14/16' 
-                imageLocation='/assets/SupervirusPicSmaller.png' 
+              <GridRowPost
+                title='Initial Commit!'
+                publishDate='2/14/16'
+                imageLocation='assets/SupervirusPicSmaller.png' 
                 text={firstPostText}
                 link="http://samgqroberts.com/games/supervirus"  />
             </Grid>
@@ -80,7 +80,7 @@ const MainContent = React.createClass({
     return (
       <div id="main-content" className="row main-content">
         <div className="col-md-2"></div>
-        
+
         <div className="col-md-8">
           <Panel header={data.panelHeader} bsStyle="primary">
             {data.panelContent}
@@ -93,7 +93,7 @@ const MainContent = React.createClass({
             </ul>
           </Panel>
         </div>
-        
+
         <div className="col-md-2"/>
       </div>
     );
