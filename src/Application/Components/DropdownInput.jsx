@@ -1,16 +1,16 @@
 import React from 'react';
-import { Panel, DropdownButton, MenuItem } from 'react-bootstrap';
+import { DropdownButton, MenuItem } from 'react-bootstrap';
 
 const DropdownInput = React.createClass({
   propTypes: {
+    fieldName: React.PropTypes.string.isRequired,
     options: React.PropTypes.array.isRequired,
-    fieldName: React.PropTypes.string.isRequired
   },
 
   getInitialState() {
     return {
       options: ['juan', 'deux'],
-      fieldName: "TempName"
+      fieldName: 'TempName',
     };
   },
 
@@ -18,25 +18,19 @@ const DropdownInput = React.createClass({
     const options = this.props.options;
     const fieldName = this.props.fieldName;
 
-    return  (
-
+    return (
       <div className="input-row row">
         <div className="col-md-2"></div>
-
         <div className=" dropdown-input col-md-8">
           <DropdownButton title={fieldName} id="bg-nested-dropdown">
-            
-            {options.map(function(option, index) {
-              return <MenuItem key={index} eventKey={index}>{option}</MenuItem>
+            {options.map((option, index) => {
+              return <MenuItem key={index} eventKey={index}>{option}</MenuItem>;
             })}
-
           </DropdownButton>
         </div>
-
         <div className="col-md-2"></div>
       </div>
     );
-    
   },
 });
 

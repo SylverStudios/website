@@ -16,10 +16,10 @@ const GridRowPost = React.createClass({
     };
   },
 
-  render: function() {
-    var button;
+  render() {
+    let button;
     if (this.props.link) {
-      button = <Button bsStyle="link" href={this.props.link}> {this.props.linkText} </Button>
+      button = <Button bsStyle="link" href={this.props.link}> {this.props.linkText} </Button>;
     }
 
     return (

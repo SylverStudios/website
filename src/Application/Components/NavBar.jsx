@@ -7,7 +7,7 @@ const NavBar = React.createClass({
     onActiveTabChange: React.PropTypes.func.isRequired,
   },
 
-  render: function() {
+  render() {
     const activeTab = this.props.activeTab;
     const onSelectFxn = this.props.onActiveTabChange;
 
@@ -26,7 +26,7 @@ const NavBar = React.createClass({
 
       </Nav>
     );
-  }
+  },
 });
 
 export default NavBar;
