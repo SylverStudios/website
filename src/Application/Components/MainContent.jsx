@@ -8,8 +8,9 @@ const tabInfo = {
     panelHeader: 'Games',
     panelContent: 'Check out the links to our games below!',
     links: [
-      { title: 'Supervirus', link: 'http://samgqroberts.com/games/supervirus' },
+      { title: 'Trump Money Maker', link: 'http://samgqroberts.com/games/tmm'},
       { title: 'Circuit Simulator', link: 'http://samgqroberts.com/games/circuit' },
+      { title: 'Supervirus', link: 'http://samgqroberts.com/games/supervirus' },
     ],
   },
   videos: {
@@ -50,6 +51,10 @@ to be a game but it's really not fun.  We don't know what we were thinking.  We 
 circuitry and we thought that would lend itself effectively as a fun puzzle, but we were very quite wrong.  Anyway,
 we built a thing, check it out!`;
 
+const thirdPostText = `Keeping on the theme of Grand Ideas, we have high expectations for ourselves with this one.
+Trump Money Maker is based on building a real esate empire as your favorite artificial organism, Donald Trump. This game
+actual has someone what of a direction and some 'App Flow' as they say. Hope you enjoy it!`;
+
 
 const MainContent = React.createClass({
   propTypes() {
@@ -82,6 +87,14 @@ const MainContent = React.createClass({
           </div>
           <div id="blog-content">
             <Grid>
+              <GridRowPost
+                title="Trump Money Maker - Open Beta"
+                publishDate="10/2/16"
+                imageLocation="assets/TrumpMM.png"
+                text={thirdPostText}
+                link="http://samgqroberts.com/games/tmm"
+                linkText="Yuge!"
+              />
               <GridRowPost
                 title="Circuits!"
                 publishDate="2/15/16"

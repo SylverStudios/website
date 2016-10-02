@@ -1,11 +1,11 @@
 {
   "name": "samgqroberts-website",
   "version": "0.1.0",
-  "description": "The personal website of Sam Roberts.",
+  "description": "The SylverStudios official website.",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git@github.com:samgqroberts/samgqroberts-website.git"
+    "url": "git@github.com:SylverStudios/website.git"
   },
   "main": "",
   "dependencies": {
