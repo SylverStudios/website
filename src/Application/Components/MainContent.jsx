@@ -8,7 +8,7 @@ const tabInfo = {
     panelHeader: 'Games',
     panelContent: 'Check out the links to our games below!',
     links: [
-      { title: 'Trump Money Maker', link: 'http://samgqroberts.com/games/tmm'},
+      { title: 'Trump Money Maker', link: 'http://samgqroberts.com/games/tmm' },
       { title: 'Circuit Simulator', link: 'http://samgqroberts.com/games/circuit' },
       { title: 'Supervirus', link: 'http://samgqroberts.com/games/supervirus' },
     ],
