@@ -8,9 +8,9 @@ const tabInfo = {
     panelHeader: 'Games',
     panelContent: 'Check out the links to our games below!',
     links: [
-      { title: 'Trump Money Maker', link: 'http://samgqroberts.com/games/tmm' },
-      { title: 'Circuit Simulator', link: 'http://samgqroberts.com/games/circuit' },
-      { title: 'Supervirus', link: 'http://samgqroberts.com/games/supervirus' },
+      { title: 'Trump Money Maker', link: 'http://samgqroberts.com/sylverstudios/games/tmm' },
+      { title: 'Circuit Simulator', link: 'http://samgqroberts.com/sylverstudios/games/circuit' },
+      { title: 'Supervirus', link: 'http://samgqroberts.com/sylverstudios/games/supervirus' },
     ],
   },
   videos: {
@@ -92,7 +92,7 @@ const MainContent = React.createClass({
                 publishDate="10/2/16"
                 imageLocation="assets/TrumpMM.png"
                 text={thirdPostText}
-                link="http://samgqroberts.com/games/tmm"
+                link="http://samgqroberts.com/sylverstudios/games/tmm"
                 linkText="Yuge!"
               />
               <GridRowPost
@@ -100,7 +100,7 @@ const MainContent = React.createClass({
                 publishDate="2/15/16"
                 imageLocation="assets/CircuitSimulatorPic.png"
                 text={secondPostText}
-                link="http://samgqroberts.com/games/circuit"
+                link="http://samgqroberts.com/sylverstudios/games/circuit"
                 linkText="Whoa!"
               />
               <GridRowPost
@@ -108,7 +108,7 @@ const MainContent = React.createClass({
                 publishDate="2/14/16"
                 imageLocation="assets/SupervirusPicSmaller.png"
                 text={firstPostText}
-                link="http://samgqroberts.com/games/supervirus"
+                link="http://samgqroberts.com/sylverstudios/games/supervirus"
               />
             </Grid>
           </div>
