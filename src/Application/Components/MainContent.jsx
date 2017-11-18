@@ -32,7 +32,7 @@ const tabInfo = {
   aaron: {
     panelHeader: 'Aaron',
     panelContent: 'Aaron is an awesome developer.',
-    links: [{ title: 'Git', link: 'https://github.com/Miguel4president' }],
+    links: [{ title: 'Git', link: 'https://github.com/shamshirz' }],
   },
   sylverStudios: {
     panelHeader: 'Sylver Studios',
